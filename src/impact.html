@@ -1,0 +1,189 @@
+<!--
+title: Impact
+description: What Lantern Hunt participants have accomplished: more than 2,000 verified spotted lanternfly kills, people learning to recognize an invasive species, and a growing map of removals across six states.
+nav: impact
+-->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="label label--amber">Impact</p>
+    <h1>Ordinary people removing an invasive species.</h1>
+    <p class="lede">Lantern Hunt&rsquo;s impact comes in three forms: lanternflies taken out of the landscape, people who learn to recognize them, and a growing map of where that work is happening.</p>
+    <nav class="jump" aria-label="On this page">
+      <a href="#removal">Direct removal</a>
+      <a href="#education">Education</a>
+      <a href="#map">Geographic data</a>
+      <a href="#species">Species</a>
+    </nav>
+  </div>
+</section>
+
+<section class="band band--canopy band--stats" aria-labelledby="record-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label">Verified to date</p>
+      <h2 id="record-title">More than 2,000 verified kills in {{DAYS_TO_MILESTONE}} days.</h2>
+      <p class="lede muted">Lantern Hunt launched on {{LAUNCH_DATE}}, and reached 2,000 verified spotted lanternfly kills on {{MILESTONE_DATE}}. Each one is an invasive insect that someone found, killed, and photographed, and that a reviewer approved.</p>
+    </div>
+    {{STATS}}
+  </div>
+</section>
+
+<section class="band band--paper" id="removal" aria-labelledby="removal-title">
+  <div class="wrap split split--wide-text split--top">
+    <div class="stack stack--loose">
+      <div class="section-head">
+        <p class="label">1 &middot; Direct removal</p>
+        <h2 id="removal-title">Every kill is one less lanternfly feeding on a vine or a tree.</h2>
+      </div>
+      <div class="stack">
+        <p>Spotted lanternflies feed on the sap of more than 70 kinds of plants, including grapevines, hops, stone fruit trees, and hardwoods. The sticky, sugary fluid they excrete coats leaves, patios, and cars, and grows a black sooty mold that further damages the plants beneath it.</p>
+        <p>The damage is economic as well as ecological. A 2020 Penn State study estimated that if the insect spread across Pennsylvania it could cost the state at least $324 million a year and about 2,800 jobs, with grape growers, nurseries, Christmas tree farms, and forests among the hardest hit.</p>
+        <p>Removal is something anyone can do. An adult killed in late summer is one fewer insect feeding and laying eggs. An egg mass scraped off a tree in winter is 30 to 50 nymphs that never hatch. Lantern Hunt counts adults and egg masses separately and awards eight times the points for an egg mass, which gives participants a reason to seek out egg masses.</p>
+        <p>One person stopping to kill a few lanternflies on a walk is a small act. Hundreds of people doing it in the same weeks and the same neighborhoods add up to a coordinated control effort that no single agency could staff.</p>
+      </div>
+      <p class="credit">Source: <a href="https://www.psu.edu/news/research/story/scientists-examine-potential-economic-impact-spotted-lanternfly-pa" rel="noopener">Penn State, 2020</a>; <a href="https://www.aphis.usda.gov/plant-pests-diseases/slf" rel="noopener">USDA APHIS</a>.</p>
+    </div>
+    <figure class="photo photo--tall">
+      <img src="assets/img/hero-trunk-800.webp" srcset="assets/img/hero-trunk-800.webp 800w, assets/img/hero-trunk-1440.webp 1440w" sizes="(min-width: 880px) 40vw, 100vw" width="1440" height="1080" loading="lazy" alt="Dozens of adult spotted lanternflies clustered on the bark of a tree-of-heaven.">
+      <figcaption>
+        <span>Adult spotted lanternflies on a tree-of-heaven, their preferred host.</span>
+        <a class="photo-credit" href="credits.html#c-hero" aria-label="Photo credit for the tree-of-heaven photograph">Credit</a>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band band--bone" id="education" aria-labelledby="education-title">
+  <div class="wrap split split--top">
+    <div class="section-head">
+      <p class="label">2 &middot; Education</p>
+      <h2 id="education-title">People who learn to recognize it start removing it.</h2>
+      <p class="lede">Most people have never been taught to recognize an invasive insect. Many walk past a spotted lanternfly, or a gray egg mass on a tree, without knowing what it is.</p>
+    </div>
+    <div class="stack">
+      <p>Lantern Hunt teaches what to look for at every stage: the gray egg masses of fall and winter, the black nymphs of late spring, the red nymphs of midsummer, and the spotted adults of late summer and fall. It explains when each stage appears, why the insect is a problem, and how to remove it.</p>
+      <p>That knowledge stays with people after they close the app. Someone who has learned to spot an egg mass notices egg masses on a neighbor&rsquo;s tree, a park bench, or a trailer about to leave a quarantine area. They can tell friends, show their children, and report sightings to their state.</p>
+      <p>Invasive-species management is usually the work of specialists. Lantern Hunt turns it into something ordinary people understand and take part in.</p>
+      <p><a class="textlink" href="how-it-works.html#identify">See the identification guide</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--field" id="map" aria-labelledby="map-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label">3 &middot; Geographic data</p>
+      <h2 id="map-title">Verified removals across six states.</h2>
+      <p class="lede muted">Every geolocated approved submission records where someone found and removed spotted lanternflies. Connecticut leads, with New Haven County at the center of the effort. Select a state to see its counties.</p>
+    </div>
+    {{MAP_FULL}}
+    <div class="cols cols--3 mt-l">
+      <div><h3>Where people meet the insect</h3><p class="muted">Removal records show where lanternflies are turning up in backyards, parks, and roadsides, including places a survey crew may never visit.</p></div>
+      <div><h3>Where reports are concentrated</h3><p class="muted">Clusters of reports show where the insect is turning up most often, and new reports at the edges can point to where it is spreading.</p></div>
+      <div><h3>Useful to professionals</h3><p class="muted">Over time, these records will help researchers, conservation groups, growers, and agencies decide where to look and where to direct control work.</p></div>
+    </div>
+    <p class="credit mt-m">Approved removals as of {{STAT_ASOF}}, grouped by state and county. Areas with few contributors appear as ranges. Removals without a recorded location count in the totals but are not mapped. This is a map of removals, not of where lanternflies live. <a href="accountability.html#location-data">How we handle location data</a>. Boundaries: U.S. Census Bureau, via us-atlas.</p>
+  </div>
+</section>
+
+<section class="band band--paper" id="criteria" aria-labelledby="criteria-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label">Choosing species</p>
+      <h2 id="criteria-title">Five tests for every species we take on.</h2>
+      <p class="lede">Lantern Hunt does not ask people to kill anything unfamiliar or nonnative. It focuses many hands on a few harmful invasive species, chosen because ordinary people can make a real difference against them.</p>
+    </div>
+    <ol class="cols cols--5 criteria">
+      <li><p class="label label--amber">01</p><h3>Real harm</h3><p class="muted">The species causes meaningful ecological or agricultural damage.</p></li>
+      <li><p class="label label--amber">02</p><h3>Safe and legal to remove</h3><p class="muted">Ordinary people can remove it safely and lawfully under the right conditions.</p></li>
+      <li><p class="label label--amber">03</p><h3>Easy to identify</h3><p class="muted">It can be recognized reliably, with little risk of confusion with native species.</p></li>
+      <li><p class="label label--amber">04</p><h3>Removal helps</h3><p class="muted">Individual removals contribute to control, such as eggs destroyed before they hatch or plants pulled before they seed.</p></li>
+      <li><p class="label label--amber">05</p><h3>Verifiable</h3><p class="muted">A removal can be photographed and reviewed, which matters most once money is involved.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band band--bone" id="species" aria-labelledby="species-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label">One approach, more species</p>
+      <h2 id="species-title">The spotted lanternfly today. Five species that could come next.</h2>
+      <p class="lede">The spotted lanternfly is what Lantern Hunt does now. These five pass the same tests and show how the approach could extend to plants, insects, and animals in other regions.</p>
+    </div>
+    <div class="species-grid">
+      <article class="species">
+        <img src="assets/img/nymph-640.webp" srcset="assets/img/nymph-640.webp 640w, assets/img/nymph-1200.webp 1200w" sizes="(min-width: 980px) 30vw, (min-width: 720px) 45vw, 100vw" width="1200" height="1200" loading="lazy" alt="A red, black, and white late-stage spotted lanternfly nymph on a leaf.">
+        <div class="species__body">
+          <div class="kicker-row"><span class="tag tag--live">Operating now</span><span class="label">Insect &middot; 19 states and D.C.</span></div>
+          <h3>Spotted lanternfly <span class="latin muted">Lycorma delicatula</span></h3>
+          <p>Feeds on grapevines, fruit trees, and hardwoods. Adults are conspicuous and egg masses scrape off by hand, which is why it was the first species. Participants have recorded {{STAT_VALUE_0}} verified kills so far, in six states.</p>
+          <a class="photo-credit" href="credits.html#c-nymph-late" aria-label="Photo credit for the late-stage nymph">Credit</a>
+        </div>
+      </article>
+      <article class="species">
+        <img src="assets/img/species-scotch-broom-480.webp" srcset="assets/img/species-scotch-broom-480.webp 480w, assets/img/species-scotch-broom-900.webp 900w" sizes="(min-width: 980px) 30vw, (min-width: 720px) 45vw, 100vw" width="900" height="600" loading="lazy" alt="Bright yellow flowers on the green stems of a Scotch broom shrub.">
+        <div class="species__body">
+          <div class="kicker-row"><span class="tag tag--proposal">Potential</span><span class="label">Plant &middot; Pacific Northwest</span></div>
+          <h3>Scotch broom <span class="latin muted">Cytisus scoparius</span></h3>
+          <p>One shrub can produce more than 10,000 seeds a year, crowding out native plants and adding fuel for wildfire. Seedlings and small plants pull out by hand, roots and all, so every plant removed before it seeds keeps its seeds out of the soil.</p>
+          <a class="photo-credit" href="credits.html#c-scotch-broom" aria-label="Photo credit for the Scotch broom photograph">Credit</a>
+        </div>
+      </article>
+      <article class="species">
+        <img src="assets/img/species-japanese-beetle-480.webp" srcset="assets/img/species-japanese-beetle-480.webp 480w, assets/img/species-japanese-beetle-900.webp 900w" sizes="(min-width: 980px) 30vw, (min-width: 720px) 45vw, 100vw" width="900" height="600" loading="lazy" alt="A metallic green Japanese beetle with copper wing covers on a leaf.">
+        <div class="species__body">
+          <div class="kicker-row"><span class="tag tag--proposal">Potential</span><span class="label">Insect &middot; Washington State</span></div>
+          <h3>Japanese beetle <span class="latin muted">Popillia japonica</span></h3>
+          <p>Adults feed on more than 300 kinds of plants. Washington has been working to eradicate an infestation first found in Grandview in 2020. Beetles can be hand-picked into soapy water, so residents can help reduce numbers around homes and farms.</p>
+          <a class="photo-credit" href="credits.html#c-japanese-beetle" aria-label="Photo credit for the Japanese beetle photograph">Credit</a>
+        </div>
+      </article>
+      <article class="species">
+        <img src="assets/img/species-garlic-mustard-480.webp" srcset="assets/img/species-garlic-mustard-480.webp 480w, assets/img/species-garlic-mustard-900.webp 900w" sizes="(min-width: 980px) 30vw, (min-width: 720px) 45vw, 100vw" width="900" height="600" loading="lazy" alt="Small white four-petaled flowers of garlic mustard above green woodland leaves.">
+        <div class="species__body">
+          <div class="kicker-row"><span class="tag tag--proposal">Potential</span><span class="label">Plant &middot; Eastern United States</span></div>
+          <h3>Garlic mustard <span class="latin muted">Alliaria petiolata</span></h3>
+          <p>It disrupts the soil fungi that native plants depend on and crowds out spring wildflowers. Whole plants pull easily from April through June, and pulling them before they seed stops that year&rsquo;s seed from reaching the soil.</p>
+          <a class="photo-credit" href="credits.html#c-garlic-mustard" aria-label="Photo credit for the garlic mustard photograph">Credit</a>
+        </div>
+      </article>
+      <article class="species">
+        <img src="assets/img/species-spongy-moth-eggs-480.webp" srcset="assets/img/species-spongy-moth-eggs-480.webp 480w, assets/img/species-spongy-moth-eggs-900.webp 900w" sizes="(min-width: 980px) 30vw, (min-width: 720px) 45vw, 100vw" width="900" height="600" loading="lazy" alt="A fuzzy tan spongy moth egg mass on lichen-covered tree bark.">
+        <div class="species__body">
+          <div class="kicker-row"><span class="tag tag--proposal">Potential</span><span class="label">Insect &middot; Where established</span></div>
+          <h3>Spongy moth egg masses <span class="latin muted">Lymantria dispar</span></h3>
+          <p>Its caterpillars feed on the leaves of forest and shade trees. An egg mass often holds more than 600 eggs, and scraping masses into soapy water from mid-October to mid-April reduces the next year&rsquo;s caterpillars.</p>
+          <a class="photo-credit" href="credits.html#c-spongy-moth" aria-label="Photo credit for the spongy moth photograph">Credit</a>
+        </div>
+      </article>
+      <article class="species">
+        <img src="assets/img/species-green-crab-480.webp" srcset="assets/img/species-green-crab-480.webp 480w, assets/img/species-green-crab-900.webp 900w" sizes="(min-width: 980px) 30vw, (min-width: 720px) 45vw, 100vw" width="900" height="600" loading="lazy" alt="A hand holding a European green crab above a tidal mudflat.">
+        <div class="species__body">
+          <div class="kicker-row"><span class="tag tag--proposal">Potential</span><span class="label">Animal &middot; Pacific Northwest</span></div>
+          <h3>European green crab <span class="latin muted">Carcinus maenas</span></h3>
+          <p>Green crabs can prey on young oysters and clams and destroy the eelgrass beds and estuary habitat that salmon depend on, putting a shellfish industry worth more than $100 million a year at risk. Washington declared an emergency over the crab in 2022, and about 1.74 million were removed from its waters between January 2022 and March 2025. Larger, coordinated trapping efforts can help protect shellfish beds and coastal habitat.</p>
+          <a class="photo-credit" href="credits.html#c-green-crab" aria-label="Photo credit for the green crab photograph">Credit</a>
+        </div>
+      </article>
+    </div>
+    <p class="credit mt-m">Sources: <a href="https://www.nwcb.wa.gov/pdfs/scotchbroombrochure.pdf" rel="noopener">Washington State Noxious Weed Control Board</a>; <a href="https://lee.ces.ncsu.edu/2025/05/preparing-for-and-defending-against-japanese-beetles/" rel="noopener">NC State Extension</a>; <a href="https://washingtonstatestandard.com/2025/01/03/wa-agency-asks-thousands-of-property-owners-for-help-in-fight-against-invasive-bug/" rel="noopener">Washington State Standard</a>; <a href="https://extension.unh.edu/blog/2024/05/wanted-garlic-mustard" rel="noopener">UNH Extension</a>; <a href="https://fyi.extension.wisc.edu/spongymothinwisconsin/pest-management-2/management-guide-for-homeowners/" rel="noopener">UW&ndash;Madison Extension</a>; <a href="https://wdfw.wa.gov/publications/02623" rel="noopener">WDFW</a>; <a href="https://wdfw.wa.gov/species-habitats/invasive/carcinus-maenas" rel="noopener">WDFW green crab page</a>.</p>
+    <p class="mt-m"><a class="textlink" href="partners.html#species">What partners could build around each species</a></p>
+  </div>
+</section>
+
+<section class="band band--canopy">
+  <div class="wrap">
+    <div class="contact">
+      <div class="stack">
+        <p class="label label--amber">Take part</p>
+        <h2>Add your removals to the map.</h2>
+        <p class="muted">The app is free on iPhone. Organizations that want to direct this effort toward a species or a place can talk to us about a campaign.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn--primary" href="{{APP_STORE}}" rel="noopener">{{APPLE_ICON}}Get the app</a>
+        <a class="btn btn--ghost" href="partners.html#contact">Talk to us about a campaign</a>
+      </div>
+    </div>
+    <p class="mt-m muted">Want to know how these numbers are produced? <a class="textlink" href="accountability.html">Read how we verify and count removals</a></p>
+  </div>
+</section>
