@@ -1,0 +1,141 @@
+<!--
+title: Accountability
+description: How Lantern Hunt reviews submissions, calculates its statistics, handles location data, and protects participants' privacy.
+nav: accountability
+-->
+<section class="page-hero">
+  <div class="wrap">
+    <p class="label label--amber">Accountability</p>
+    <h1>How a removal becomes a number on this site.</h1>
+    <p class="lede">Every figure Lantern Hunt publishes comes from submissions a person has reviewed. This page explains what a submission contains, how it is reviewed, how the statistics are calculated, and how participants&rsquo; locations and privacy are protected.</p>
+    <nav class="jump" aria-label="On this page">
+      <a href="#submission">What a submission contains</a>
+      <a href="#review">Review</a>
+      <a href="#statistics">Statistics</a>
+      <a href="#location-data">Location data</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+  </div>
+</section>
+
+<section class="band band--paper" id="submission" aria-labelledby="submission-title">
+  <div class="wrap split split--top">
+    <div class="section-head">
+      <p class="label">The submission</p>
+      <h2 id="submission-title">What a participant sends.</h2>
+      <p class="lede">Each removal is submitted from the participant&rsquo;s phone as a single record.</p>
+    </div>
+    <dl class="notes">
+      <div><dt>Type</dt><dd>Adult spotted lanternfly or egg mass</dd></div>
+      <div><dt>Quantity</dt><dd>How many the participant removed</dd></div>
+      <div><dt>Photos</dt><dd>A before and an after photograph, with the time each was taken</dd></div>
+      <div><dt>Location</dt><dd>Latitude and longitude from the phone, with its GPS accuracy estimate, when the phone provides them</dd></div>
+      <div><dt>Review</dt><dd>Submission time, review status, review date, and any rejection reason</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="band band--bone" id="review" aria-labelledby="review-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label">Review</p>
+      <h2 id="review-title">A person reviews every submission.</h2>
+      <p class="lede">The reviewer sees the full submission, including both photographs, the type and quantity entered, and the full-precision location. Nothing counts until it has been approved.</p>
+    </div>
+    <div class="flow" role="list">
+      <div class="flow__node" role="listitem">
+        <p class="label">Submitted</p>
+        <h3>The participant sends the removal</h3>
+        <p class="muted">Type, quantity, two photos, and the location, if available, arrive together. Nothing is visible to other users yet.</p>
+      </div>
+      <div class="flow__arrow" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M4 14h18m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+      <div class="flow__node" role="listitem">
+        <p class="label">In review</p>
+        <h3>A reviewer examines it</h3>
+        <p class="muted">The reviewer looks at the photographs and the details entered, then approves or rejects the submission.</p>
+      </div>
+      <div class="flow__arrow" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M4 14h18m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+      <div class="flow__out" role="listitem">
+        <div class="flow__node ok">
+          <p class="label">Approved</p>
+          <h3>Counts as verified</h3>
+          <p class="muted">Points are confirmed, and the removal appears on the in-app community map at reduced precision.</p>
+        </div>
+        <div class="flow__node no">
+          <p class="label">Rejected</p>
+          <h3>Does not count</h3>
+          <p class="muted">No points, and it never appears on the map or in any statistic.</p>
+        </div>
+      </div>
+    </div>
+    <p class="credit mt-m">Review checks the photographs and details of each submission. It is not a laboratory identification or an on-site inspection.</p>
+  </div>
+</section>
+
+<section class="band band--paper" id="statistics" aria-labelledby="statistics-title">
+  <div class="wrap split split--top">
+    <div class="section-head">
+      <p class="label">Statistics</p>
+      <h2 id="statistics-title">How the figures are calculated.</h2>
+      <p class="lede">The figures on this site are calculated from an export of the app&rsquo;s submission records. They are updated by hand, and each one shows the date it was calculated.</p>
+    </div>
+    <dl class="notes">
+      <div><dt>What counts</dt><dd>Approved submissions only. Pending and rejected submissions are left out.</dd></div>
+      <div><dt>Start date</dt><dd>Submissions from the public launch on {{LAUNCH_DATE}} onward. Earlier submissions were pre-launch testing.</dd></div>
+      <div><dt>Verified kills</dt><dd>The total quantity on approved adult submissions</dd></div>
+      <div><dt>Egg masses</dt><dd>Counted separately and never added to kills, because one egg mass holds 30 to 50 eggs rather than one insect</dd></div>
+      <div><dt>Geolocated submissions</dt><dd>Approved submissions, adult or egg mass, that include a latitude and longitude</dd></div>
+      <div><dt>Duplicates</dt><dd>Each submission is counted once</dd></div>
+      <div><dt>Rounding</dt><dd>Headline figures are rounded down, so 2,067 appears as 2,000+</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="band band--field" id="location-data" aria-labelledby="location-title">
+  <div class="wrap split split--top">
+    <div class="section-head">
+      <p class="label">Location data</p>
+      <h2 id="location-title">Useful for mapping, careful about homes.</h2>
+      <p class="lede muted">A removal often happens at someone&rsquo;s home. Exact locations are seen only by the reviewer. Everyone else sees them at reduced precision or grouped by county.</p>
+    </div>
+    <dl class="notes">
+      <div><dt>Full precision</dt><dd>Visible only to the reviewer, never to other users</dd></div>
+      <div><dt>In-app community map</dt><dd>Approved removals only, shown at reduced precision of about 10 meters. That is still precise enough to suggest a street or property.</dd></div>
+      <div><dt>Pending and rejected</dt><dd>Not visible to other users</dd></div>
+      <div><dt>Website map</dt><dd>Each location is assigned to a state and county, and the coordinates are then discarded. No coordinates are published on this site.</dd></div>
+      <div><dt>Small numbers</dt><dd>An area shows an exact count only when at least three people contributed and it has at least ten kills. Otherwise it shows a range, such as &ldquo;fewer than 10.&rdquo;</dd></div>
+      <div><dt>No location</dt><dd>Approved removals submitted without a location count in the totals but do not appear on the map</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="band band--paper" id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap split split--top">
+    <div class="section-head">
+      <p class="label">Privacy</p>
+      <h2 id="privacy-title">What we collect and what we don&rsquo;t.</h2>
+    </div>
+    <div class="stack">
+      <dl class="notes">
+        <div><dt>Accounts</dt><dd>No name or email address required</dd></div>
+        <div><dt>Photo metadata</dt><dd>Uploaded images are created fresh, without the original files&rsquo; embedded GPS tags</dd></div>
+        <div><dt>Tracking</dt><dd>No third-party advertising, analytics, crash-reporting, or tracking software in the app</dd></div>
+        <div><dt>Selling data</dt><dd>We do not sell personal information</dd></div>
+      </dl>
+      <p><a class="textlink" href="privacy.html">Read the full privacy policy</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--canopy">
+  <div class="wrap">
+    <div class="contact">
+      <div class="stack">
+        <p class="label label--amber">For agencies and partners</p>
+        <h2>Need records for a specific area or program?</h2>
+        <p class="muted">We can discuss coverage, review standards, and reporting formats for a pilot or a sponsored campaign.</p>
+      </div>
+      <div class="actions"><a class="btn btn--primary" href="partners.html#contact">Contact us about a pilot</a></div>
+    </div>
+  </div>
+</section>
